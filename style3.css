@@ -1,0 +1,128 @@
+.name{
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 20px;
+    position: relative;
+    padding-left: 10px;
+}
+.name::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translatey(-50%);
+
+}
+.line{
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    position : relative;
+
+}
+.line::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top:50%;
+    transform: translateY(-50%);
+}
+.line-text{
+    display: inline-block;
+    background-color: white;
+    position: relative;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    color: rgb(221, 102, 102);
+    position: relative;
+    margin : 50px auto;
+}
+.icon:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    position: absolute;
+    background-color: currentColor;
+    opacity: 0.25;
+}
+.icon-user{
+position: absolute;
+top : 50% ;
+left : 50% ;
+transform: translate(-50%,-50%);
+}
+
+.effect{
+    display: inline-block;
+    background-color: white;
+    position: relative;
+    padding :20px;
+    text-align: center;
+    border: 1px solid red;
+    margin: 10px;
+    z-index: 1;
+}
+
+.effect:before{
+    content: "";
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    z-index: -1;
+    transition: height 0.2s linear;
+}
+.effect:hover{
+    color: aqua;
+}
+.effect:hover::before{
+    height: 100%;
+}
+
+.circle-loading{
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+    margin: 5rem auto;
+    border-radius: 50px;
+    transform: scale(2);
+    position: relative;
+    /* animation: fade 1s forwards  infinite; */
+}
+.circle-loading::after{
+    content: "";
+    position: absolute;
+    top : 0;
+    left : 0;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: inherit;
+    animation: fade 1s forwards  infinite;
+
+
+}
+@keyframes fade {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to{
+        transform: scale(2);
+        opacity: 0;
+    }
+
+}

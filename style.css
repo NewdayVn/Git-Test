@@ -1,0 +1,81 @@
+p{
+    color: red;
+    color:rgba(160, 96, 96, 0.5)
+}
+html{
+    font-size: 62.5%;
+}
+.background
+{
+    background-color: aqua;
+    max-width: 200px;
+    height: 100px;
+    overflow-y: auto;
+}
+.background2 {
+    /* /* background-image: url("https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+    width: 100%;
+    height: 500px;
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    width: 100%;
+    height: 500px;
+
+    background: url(https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80) no-repeat ; */
+    
+}
+.em{
+    width: 10em;
+    height: 10em;
+    background-color: yellow;
+    font-size: 32px;
+    margin-right: 50px;
+}
+.rem{
+    width: 10rem;
+    height: 10rem;
+    background-color: red;
+    font-size: 32px;
+    margin-top: 100px;
+    padding: 100px;
+    /* 1rem = 10px setup (font-size : 62.5%) */
+}
+/* a{
+    color: white;
+    text-decoration: none;
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+    background-color: yellow;
+display : inline-block;
+} */
+.text{
+     font-family: 'Playfair Display', serif; 
+    font-size: 1.6rem;
+    font-style: italic;
+    /* 
+    overflow : hidden;
+    text-overflow: ellipsis; (dấu 3 chấm) */
+}
+img{
+    max-width: 100%;
+} 
+.image{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+}
+.image-wrap{
+    text-align: center;
+}
+.pseudo{
+    color: black;
+    font-size: 10rem;
+}
+/* .pseudo:hover{
+    color: red;
+} */
+.pseudo:active{
+    color: red;
+}
